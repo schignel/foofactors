@@ -14,5 +14,6 @@
 fclean <- function(x) {
   xtrim <- stringr::str_to_title(x)
   xtrim.tit <- stringr::str_trim(xtrim)
-  xtrim.tit
+  as.factor(xtrim.tit)
 }
+

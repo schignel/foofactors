@@ -6,8 +6,9 @@ Authors@R: person("Stephen", "Chignell", role=c("aut", "cre"),
 Description: Factors have driven people to extreme measures, like ordering
     custom conference ribbons and laptop stickers to express how HELLNO we
     feel about stringsAsFactors. And yet, sometimes you need them. Can they
-    be made less maddening? Let's find out. This package builds off of the 
-	foofactors package developed by Jenny Bryan. 
+    be made less maddening? Let's find out. NOTE: this package builds off 
+	of the original foofactors package developed by Jenny Bryan, and is for
+    pedagogical purposes only.	
 Depends:
     R (>= 3.2.2)
 License: MIT + file LICENSE
