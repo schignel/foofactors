@@ -1,12 +1,13 @@
 Package: foofactors
-Title: Make Factors Less Annoying
+Title: Handy tools for working with factors
 Version: 0.0.0.9000
-Authors@R: person("Jennifer", "Bryan", role=c("aut", "cre"),
-    email = "jenny@stat.ubc.ca")
+Authors@R: person("Stephen", "Chignell", role=c("aut", "cre"),
+    email = "stephen.chignell@alumni.ubc.ca")
 Description: Factors have driven people to extreme measures, like ordering
     custom conference ribbons and laptop stickers to express how HELLNO we
     feel about stringsAsFactors. And yet, sometimes you need them. Can they
-    be made less maddening? Let's find out.
+    be made less maddening? Let's find out. This package builds off of the 
+	foofactors package developed by Jenny Bryan. 
 Depends:
     R (>= 3.2.2)
 License: MIT + file LICENSE
@@ -19,5 +20,5 @@ Imports:
     dplyr,
     stringr
 VignetteBuilder: knitr
-URL: https://github.com/jennybc/foofactors
-BugReports: https://github.com/jennybc/foofactors/issues
+URL: https://github.com/schignel/foofactors
+BugReports: https://github.com/schignel/foofactors/issues
