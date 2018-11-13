@@ -8,7 +8,7 @@ Factors are a very useful type of variable in R, but they can also drive you nut
 ### Installation
 
 ``` r
-devtools::install_github("jennybc/foofactors")
+devtools::install_github("schignel/foofactors")
 ```
 
 ### Quick demo
@@ -84,5 +84,6 @@ The `fclean` function will go through all of the factor levels and trim extra wh
 
 ``` r
 fclean(production)
-#> [1] "High Production" "Med Production"  "Med Production"  "Low Production"
+#> [1] High Production Med Production  Med Production  Low Production 
+#> Levels: High Production Low Production Med Production
 ```
