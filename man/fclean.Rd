@@ -2,8 +2,7 @@
 % Please edit documentation in R/fclean.R
 \name{fclean}
 \alias{fclean}
-\title{Clean factor levels
-For all levels, remove white spaces and convert to title case.}
+\title{Clean factor levels}
 \usage{
 fclean(x)
 }
@@ -14,10 +13,12 @@ fclean(x)
 factor
 }
 \description{
-Clean factor levels
 For all levels, remove white spaces and convert to title case.
 }
 \examples{
+# Create a factor with messy levels
 production <- factor(c("  HIGH production", "MED production  ",  "MED production  ", " low Production"))
+
+# Run it through fclean()
 fclean(production)
 }
