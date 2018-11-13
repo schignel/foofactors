@@ -59,12 +59,30 @@ The `freq_out()` function returns a frequency table as a well-named `tbl_df`:
 
 ``` r
 freq_out(x)
-#> # A tibble: 5 × 2
-#>        x     n
-#>   <fctr> <int>
-#> 1      a    25
-#> 2      b    26
-#> 3      c    17
-#> 4      d    17
-#> 5      e    15
+#> # A tibble: 5 x 2
+#>   x         n
+#>   <fct> <int>
+#> 1 a        25
+#> 2 b        26
+#> 3 c        17
+#> 4 d        17
+#> 5 e        15
+```
+
+Human error during data entry often leads to typos and inconsistent spacing and capitlization. This is particularly true when there are multiple individuals working on entering the same categorical data.
+
+``` r
+production <- factor(c("  HIGH production", "MED production  ",  "MED production  ", " low Production"))
+production
+#> [1]   HIGH production MED production    MED production     low Production  
+#> Levels:   HIGH production  low Production MED production
+```
+
+This can be fixed by identifying individual inconsistencies after factor created, but is time consuming and cumbersome.
+
+The `fclean` function will go through all of the factor levels and trim extra white space and convert to title case using the `stringr` package.
+
+``` r
+fclean(production)
+#> [1] "High Production" "Med Production"  "Med Production"  "Low Production"
 ```
